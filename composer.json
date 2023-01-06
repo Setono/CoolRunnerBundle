@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": ">=7.4",
+        "cuyz/valinor": "^0.17.0",
         "setono/coolrunner-php-sdk": "dev-master",
         "symfony/config": "^5.4 || ^6.0",
         "symfony/dependency-injection": "^5.4 || ^6.0",
@@ -21,7 +22,6 @@
     "require-dev": {
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
         "nyholm/psr7": "^1.5",
-        "nyholm/symfony-bundle-test": "^2.0",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/phpunit": "^9.5",
         "psalm/plugin-phpunit": "^0.18",

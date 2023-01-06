@@ -26,4 +26,9 @@ final class SetonoCoolRunnerExtension extends Extension
 
         $loader->load('services.xml');
     }
+
+    public function getAlias(): string
+    {
+        return 'setono_coolrunner';
+    }
 }

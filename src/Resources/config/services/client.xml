@@ -10,6 +10,7 @@
                  class="Setono\CoolRunner\Client\Client">
             <argument>%setono_coolrunner.username%</argument>
             <argument>%setono_coolrunner.token%</argument>
+            <configurator service="setono_coolrunner.dependency_injection.client_configurator" method="configure"/>
         </service>
     </services>
 </container>
