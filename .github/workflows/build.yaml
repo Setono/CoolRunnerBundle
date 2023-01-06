@@ -64,6 +64,10 @@ jobs:
                     - "^5.4"
                     - "^6.0"
 
+                exclude:
+                    -   php-version: "7.4"
+                        symfony: "^6.0"
+
         steps:
             -   name: "Checkout"
                 uses: "actions/checkout@v3"
@@ -84,7 +88,7 @@ jobs:
                     SYMFONY_REQUIRE: "${{ matrix.symfony }}"
 
             -   name: "Run maglnet/composer-require-checker"
-                run: "composer-require-checker check"
+                run: "composer-require-checker check --config-file=$(pwd)/composer-require-checker.json"
 
             -   name: "Run composer-unused/composer-unused"
                 run: "composer-unused"
@@ -107,6 +111,10 @@ jobs:
                 symfony:
                     - "^5.4"
                     - "^6.0"
+
+                exclude:
+                    -   php-version: "7.4"
+                        symfony: "^6.0"
 
         steps:
             -   name: "Checkout"
@@ -149,6 +157,10 @@ jobs:
                 symfony:
                     - "^5.4"
                     - "^6.0"
+
+                exclude:
+                    -   php-version: "7.4"
+                        symfony: "^6.0"
 
         steps:
             -   name: "Checkout"
