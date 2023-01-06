@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "cuyz/valinor": "^0.17.0",
+        "cuyz/valinor": "^0.17",
         "setono/coolrunner-php-sdk": "dev-master",
         "symfony/config": "^5.4 || ^6.0",
         "symfony/dependency-injection": "^5.4 || ^6.0",
