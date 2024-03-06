@@ -44,7 +44,8 @@
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": false,
-            "ergebnis/composer-normalize": true
+            "ergebnis/composer-normalize": true,
+            "php-http/discovery": true
         },
         "sort-packages": true
     },
@@ -52,7 +53,6 @@
         "analyse": "psalm",
         "check-style": "ecs check",
         "fix-style": "ecs check --fix",
-        "phpspec": "phpspec run",
         "phpunit": "phpunit"
     }
 }
