@@ -15,7 +15,7 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
+                    - "8.1"
 
                 dependencies:
                     - "highest"
@@ -53,20 +53,16 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
+                    - "8.2"
 
                 dependencies:
+                    - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
-
-                exclude:
-                    -   php-version: "7.4"
-                        symfony: "^6.0"
+                    - "~5.4.0"
+                    - "~6.4.0"
 
         steps:
             -   name: "Checkout"
@@ -101,20 +97,16 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
+                    - "8.2"
 
                 dependencies:
+                    - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
-
-                exclude:
-                    -   php-version: "7.4"
-                        symfony: "^6.0"
+                    - "~5.4.0"
+                    - "~6.4.0"
 
         steps:
             -   name: "Checkout"
@@ -146,21 +138,16 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
+                    - "8.2"
 
                 dependencies:
                     - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
-
-                exclude:
-                    -   php-version: "7.4"
-                        symfony: "^6.0"
+                    - "~5.4.0"
+                    - "~6.4.0"
 
         steps:
             -   name: "Checkout"
@@ -192,7 +179,7 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "8.1"
+                    - "8.2"
 
                 dependencies:
                     - "highest"
